@@ -1,0 +1,596 @@
+html {
+    height: 100%;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #DCD5CB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EADED2;
+    padding: 0.3vw 0.8vw;
+    box-shadow: 0 1px 3px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5vw;
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul a {
+    color: #013173;
+    font-size: 1.4vw;
+    text-decoration: none;
+    padding: 0.3vw;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+}
+
+.CTA {
+    background-color: #212844;
+    color: #FFFCF7;
+    border-radius: 1em;
+    padding: 0.5vw;
+}
+
+.CTA:hover {
+    background-color: #14192e;
+    text-decoration: none;
+}
+
+.logo {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #212844;
+    margin-bottom: 0;
+}
+
+.hero-p {
+    font-size: 1.8vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    color: #212844;
+}
+
+.top {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 7vh;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto 4vh;
+}
+
+.service {
+    box-shadow: 0 6px 12px white;
+    background-color: #EADED2;
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-img {
+    width: 100%;
+}
+
+.service-p {
+    font-size: 1.5vw;
+    color: #013173;
+    font-weight: 600;
+}
+
+.services-notes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prices {
+    font-size: 2vw;
+    font-weight: 600;
+    width: 50%;
+    background-color: #EADED2;
+    color: #013173;
+    padding: 1vw;
+    border-radius: 1em;
+    box-shadow: 0 6px 12px white;
+}
+
+.prices:hover {
+    color: #FFFCF7;
+    background-color: #212844;
+}
+
+.services-note {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #212844;
+    display: inline-block;
+    width: 40%;
+    padding: 1vw;
+    border-radius: 2em;
+}
+
+.CTA-2 {
+    width: 25%;
+    padding: 1.2vw;
+    font-size: 2.5vw;
+    text-decoration: none;
+}
+
+.about {
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+    background-color: #EADED2;
+    color: #013173;
+    padding: 2vw;
+    border-radius: 2em;
+    box-shadow: 0 6px 12px white;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5vh auto 9vh;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+.icon {
+    width: 5vw;
+}
+
+.feature-p {
+    font-size: 1.7vw;
+    color: #013173;
+    font-weight: 800;
+
+}
+
+.pay {
+    text-align: center;
+    font-size: 1.6vw;
+    color: #013173;
+    font-weight: 600;
+}
+
+.shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EADED2;
+    box-shadow: 0 6px 12px white;
+    width: 30%;
+}
+
+.city {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #212844;
+    margin-bottom: 0;
+}
+
+.time {
+    font-size: 1.6vw;
+    color: #013173;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.4vw;
+    color: #013173;
+    font-weight: 600;
+}
+
+.reviews-section {
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* نخفي النقاط */
+.swiper-pagination {
+  display: none !important;
+}
+
+/* ضبط السلايدر */
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+/* كل سلايد ياخذ حجمه الطبيعي بدون تمدد غريب */
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+}
+
+/* البوكس */
+.box {
+  background: #EADED2;
+  border-radius: 20px;
+  padding: clamp(15px, 3vw, 25px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 90%; /* يخلي العرض مضبوط وما يلزق بالكروت الثانية */
+  box-sizing: border-box;
+}
+
+/* الصورة */
+.box img {
+  width: clamp(60px, 6vw, 90px);
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* النجوم */
+.stars {
+  color: #013173;
+  margin-bottom: 10px;
+}
+
+/* النص */
+.box p {
+  font-size: clamp(13px, 1.5vw, 15px);
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+  text-align: centثr;
+  margin-top: auto;
+}
+
+/* للجوال */
+@media (max-width: 640px) {
+  .reviews-section {
+    padding: 40px 10px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+.CTA-con {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.CTA-3 {
+    font-size: 3vw;
+    width: 50%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EADED2;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.social img {
+    width: 5vw;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+.gov {
+    color: #212844;
+    font-size: 1.4vw;
+}
+
+h5 {
+    font-size: 1.2vw;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) and (min-height: 720px) {
+    header {
+        padding: 1vh;
+    }
+    header ul a {
+        font-size: 2.3vw;
+    }
+
+    .logo {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .hero {
+        font-size: 5vw;
+    }
+
+    .hero-p {
+        font-size: 3vw;
+    }
+
+    .top {
+        font-size: 3vw;
+        margin: 4vh auto 2vh;
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .service {
+        width: 18%;
+    }
+
+    .service-p {
+        font-size: 2.2vw;
+    }
+
+    .prices {
+        font-size: 4vw;
+    }
+
+    .services-notes {
+        width: 100%;
+    }
+
+    .services-note {
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .CTA-2 {
+        font-size: 4vw;
+    }
+
+    .features {
+        margin: 4vh auto 0;
+    }
+
+    .feature {
+        width: 20%;
+    }
+
+    .feature img {
+        width: 8vw;
+    }
+
+    .feature-p {
+        font-size: 2vw;
+    }
+
+    .about {
+        font-size: 3vw;
+        width: 70%;
+    }
+
+    .pay {
+        font-size: 3vw;
+    }
+
+    .ship {
+        width: 40%;
+    }
+
+    .city {
+        font-size: 3.5vw;
+    }
+
+    .time {
+        font-size: 2.8vw;
+    }
+
+    .price {
+        font-size: 2.5vw;
+    }
+
+    .CTA-3 {
+        font-size: 5vw;
+    }
+
+    .social img {
+        width: 10vw;
+    }
+
+    .gov {
+        font-size: 2.6vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.8vw;
+    }
+
+    header ul {
+        gap: 3vw;
+    }
+
+    header ul a {
+        font-size: 2.8vw;
+    }
+
+    .CTA {
+        padding: 1.5vw;
+    }
+
+    .logo {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .hero {
+        font-size: 6vw;
+    }
+
+    .hero-p {
+        font-size: 3.5vw;
+    }
+
+    .top {
+        font-size: 4vw;
+        margin: 4vh auto 2vh;
+    }
+
+    .services {
+        width: 98%;
+    }
+
+    .service {
+        width: 22%;
+    }
+
+    .service-p {
+        font-size: 3vw;
+    }
+
+    .prices {
+        width: 60%;
+        font-size: 5vw;
+    }
+
+    .services-notes {
+        width: 100%;
+    }
+
+    .services-note {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .CTA-2 {
+        font-size: 5vw;
+        width: 50%;
+    }
+
+    .features {
+        margin-bottom: 4vh;
+    }
+
+    .feature {
+        width: 30%;
+    }
+
+    .feature img {
+        width: 13vw;
+    }
+
+    .feature-p {
+        font-size: 3vw;
+    }
+
+    .about {
+        font-size: 3.5vw;
+        width: 85%;
+    }
+
+    .pay {
+        font-size: 3.4vw;
+    }
+
+    .ship {
+        width: 40%;
+    }
+
+    .city {
+        font-size: 3.5vw;
+    }
+
+    .time {
+        font-size: 3.5vw;
+    }
+
+    .price {
+        font-size: 2.8vw;
+    }
+
+    .CTA-3 {
+        font-size: 6vw;
+    }
+
+    .social img {
+        width: 14vw;
+    }
+
+    .gov {
+        font-size: 3.3vw;
+    }
+
+    h5 {
+        font-size: 2.6vw;
+        margin-bottom: 0.5vh;
+    }
+}
