@@ -578,6 +578,10 @@ h5 {
         font-size: 3vw;
     }
 
+    .click {
+        font-size: 3vw
+    }
+
     .prices {
         width: 60%;
         font-size: 5vw;
