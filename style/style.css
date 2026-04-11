@@ -120,14 +120,21 @@ header ul a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3vh;
+}
+
+.click {
+    font-size: 1vw;
+    margin: 0;
+    color: #013173;
 }
 
 .prices {
     font-size: 2vw;
     font-weight: 600;
     width: 50%;
-    background-color: #EADED2;
-    color: #013173;
+    background-color: #212844;
+    color: #FFFCF7;
     padding: 1vw;
     border-radius: 1em;
     box-shadow: 0 6px 12px white;
@@ -135,7 +142,7 @@ header ul a:hover {
 
 .prices:hover {
     color: #FFFCF7;
-    background-color: #212844;
+    background-color: #14192e;
 }
 
 .services-note {
@@ -146,6 +153,7 @@ header ul a:hover {
     width: 40%;
     padding: 1vw;
     border-radius: 2em;
+    margin: 0;
 }
 
 .CTA-2 {
@@ -160,7 +168,7 @@ header ul a:hover {
     font-size: 1.6vw;
     font-weight: 600;
     width: 50%;
-    margin: auto;
+    margin: auto auto 4vh;
     background-color: #EADED2;
     color: #013173;
     padding: 2vw;
@@ -234,6 +242,43 @@ header ul a:hover {
     font-size: 1.4vw;
     color: #013173;
     font-weight: 600;
+}
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2vw;
+    width: 100%;
+}
+
+.Q {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+    box-shadow: 0 4px 12px ;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.Q:hover {
+    transform: translateX(5px);
+}
+
+h4 {
+    margin: 10px 0;
+    color: #0C0908;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.Q-p {
+    color: #0C0908;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .reviews-section {
@@ -403,6 +448,10 @@ h5 {
         width: 100%;
     }
 
+    .click {
+        font-size: 2.5vw;
+    }
+
     .services-note {
         font-size: 3vw;
         width: 100%;
@@ -431,6 +480,18 @@ h5 {
     .about {
         font-size: 3vw;
         width: 70%;
+    }
+
+    .Q {
+        width: 80%;
+    }
+
+    h4 {
+        font-size: 3vw;
+    }
+
+    .Q-p {
+        font-size: 2.5vw;
     }
 
     .pay {
@@ -553,9 +614,10 @@ h5 {
     }
 
     .about {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
         width: 85%;
     }
+
 
     .pay {
         font-size: 3.4vw;
@@ -577,12 +639,28 @@ h5 {
         font-size: 2.8vw;
     }
 
+    .FAQ {
+        gap: 2vh;
+    }
+
+    .Q {
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 3.75vw;
+    }
+
+    .Q-p {
+        font-size: 3.33vw;
+    }
+
     .CTA-3 {
         font-size: 6vw;
     }
 
     .social img {
-        width: 14vw;
+        width: 10vw;
     }
 
     .gov {
