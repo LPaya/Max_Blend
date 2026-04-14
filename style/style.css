@@ -398,6 +398,22 @@ footer {
     font-size: 1.4vw;
 }
 
+.know {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.know img {
+    width: 7vw;
+}
+
+.know p {
+    font-size: 1.4vw;
+    color: #212844;
+}
+
 h5 {
     font-size: 1.2vw;
     margin-bottom: 0;
@@ -524,6 +540,14 @@ h5 {
     }
 
     .gov {
+        font-size: 2.6vw;
+    }
+
+    .know img {
+        width: 15vw;
+    }
+
+    .know p {
         font-size: 2.6vw;
     }
 
@@ -669,6 +693,14 @@ h5 {
     }
 
     .gov {
+        font-size: 3.3vw;
+    }
+
+    .know img {
+        width: 18vw;
+    }
+
+    .know p {
         font-size: 3.3vw;
     }
 
